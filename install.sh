@@ -47,7 +47,7 @@ esac
 
 # Check wget
 if [ -e '/usr/bin/wget' ]; then
-    wget https://vestacp.com/pub/vst-install-$type.sh -O vst-install-$type.sh
+    wget https://raw.githubusercontent.com/yusiqo/stark-panel/master/stark-installer/install-ubuntu.sh -O vst-install-$type.sh
     if [ "$?" -eq '0' ]; then
         bash vst-install-$type.sh $*
         exit
@@ -59,12 +59,12 @@ fi
 
 # Check curl
 if [ -e '/usr/bin/curl' ]; then
-    curl -O https://vestacp.com/pub/vst-install-$type.sh
+    curl -O https://raw.githubusercontent.com/yusiqo/stark-panel/master/stark-installer/install-ubuntu.sh
     if [ "$?" -eq '0' ]; then
-        bash vst-install-$type.sh $*
+        bash install-$type.sh $*
         exit
     else
-        echo "Error: vst-install-$type.sh download failed."
+        echo "Error: install-$type.sh download failed."
         exit 1
     fi
 fi
