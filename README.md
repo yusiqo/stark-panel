@@ -1,13 +1,13 @@
 [Stark Control Panel](https://github.com/yusiqo/stark-panel/)
 ==================================================
 
-Stark is back under active development as of 25 February 2024. We are commited to open source, and will engage with the community to identify the new roadmap for Vesta. Stay tuned!
+Stark is back under active development as of 25 February 2024. We are commited to open source, and will engage with the community to identify the new roadmap for STARK. Stay tuned!
 
-[![Join the chat at https://gitter.im/vesta-cp/Lobby](https://badges.gitter.im/vesta-cp/Lobby.svg)](https://gitter.im/vesta-cp/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-* Vesta is an open source hosting control panel.
-* Vesta has a clean and focused interface without the clutter.
-* Vesta has the latest of very innovative technologies.
+
+* STARK is an open source hosting control panel.
+* STARK has a clean and focused interface without the clutter.
+* STARK has the latest of very innovative technologies.
 
 How to install (2 step)
 ----------------------------
@@ -18,7 +18,7 @@ ssh root@your.server
 
 Download the installation script, and run it:
 ```bash
-curl https://vestacp.com/pub/vst-install.sh | bash
+curl https://raw.githubusercontent.com/yusiqo/stark-panel/master/install.sh | bash
 ```
 
 How to install (3 step)
@@ -31,16 +31,15 @@ ssh root@your.server
 
 Download the installation script:
 ```bash
-curl -O https://vestacp.com/pub/vst-install.sh
+curl -O https://raw.githubusercontent.com/yusiqo/stark-panel/master/install.sh
 ```
 Then run it:
 ```bash
-bash vst-install.sh
+bash install.sh
 ```
 
-License
+
 ----------------------------
-Vesta is licensed under  [GPL v3 ](https://github.com/outroll/vesta/blob/master/LICENSE) license
 
 Stark is Fork Of VestaCp
 
