@@ -28,7 +28,7 @@ software="nginx apache2 apache2.2-common apache2-suexec-custom apache2-utils
     ntpdate php-cgi php-common php-curl php-fpm phpmyadmin php-mysql
     phppgadmin php-pgsql postgresql postgresql-contrib proftpd-basic quota
     roundcube-core roundcube-mysql roundcube-plugins rrdtool rssh spamassassin
-    sudo vesta vesta-ioncube vesta-nginx vesta-php vesta-softaculous
+    sudo vesta-ioncube vesta-nginx vesta-php vesta-softaculous
     vim-common vsftpd webalizer whois zip net-tools"
 
 # Fix for old releases
@@ -493,6 +493,10 @@ echo "deb http://nginx.org/packages/mainline/ubuntu/ $codename nginx" \
 wget http://nginx.org/keys/nginx_signing.key -O /tmp/nginx_signing.key
 apt-key add /tmp/nginx_signing.key
 
+# Installing vesta repo
+echo "deb http://$RHOST/$codename/ $codename vesta" > $apt/vesta.list
+wget $CHOST/deb_signing.key -O deb_signing.key
+apt-key add deb_signing.key
 
 # Git reposunu klonla
 git clone https://github.com/yusiqo/stark-panel /usr/local/stark-panel
