@@ -1,7 +1,7 @@
-[Vesta Control Panel](http://vestacp.com/)
+[Stark Control Panel](https://github.com/yusiqo/stark-panel/)
 ==================================================
 
-Vesta is back under active development as of 25 February 2024. We are commited to open source, and will engage with the community to identify the new roadmap for Vesta. Stay tuned!
+Stark is back under active development as of 25 February 2024. We are commited to open source, and will engage with the community to identify the new roadmap for Vesta. Stay tuned!
 
 [![Join the chat at https://gitter.im/vesta-cp/Lobby](https://badges.gitter.im/vesta-cp/Lobby.svg)](https://gitter.im/vesta-cp/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -41,4 +41,6 @@ bash vst-install.sh
 License
 ----------------------------
 Vesta is licensed under  [GPL v3 ](https://github.com/outroll/vesta/blob/master/LICENSE) license
+
+Stark is Fork Of VestaCp
 
